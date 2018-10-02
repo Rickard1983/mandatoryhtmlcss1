@@ -1,0 +1,17 @@
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+  border: 3px solid #ffb83c;
+  box-shadow: 2px 2px 20px 0 gray;
+  margin-bottom: 20px;
+}
+main p{
+  width: 300px;
+  text-align: center;
+}

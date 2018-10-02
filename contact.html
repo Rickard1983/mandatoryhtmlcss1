@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-style.css">
+    <title>Rickard Jönsson</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rickard Jönsson</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="links.html">Links</a></li>
+          <li><a href="contact.html"
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="align-start">
+        <h2>Contact</h2>
+      </div>
+      <form action="index.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" placeholder="firstname lastname" required>
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="example@email.com" required>
+        <label for="select">Subject:</label>
+        <select name="select" required>
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>Javascript</option>
+          <option>Other</option>
+        </select>
+        <label for="comment">Comment:</label>
+        <textarea name="comment" rows="5" cols="40" placeholder="comment" required></textarea>
+        <button type="submit" name="button">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>Contact:</p>
+      <p>jonssonrickard1983@gmail.com</p>
+      <p>Adress</p>
+      <p>070-1234567</p>
+
+    </footer>
+  </body>
+</html>

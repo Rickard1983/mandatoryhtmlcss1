@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  outline-color: #ffb83c;
+}
+/*HEADER START*/
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 220px;
+  background-color: #fff6f1;
+  border-bottom: 1px solid #d9d4d1;
+  margin-bottom: 30px;
+}
+header h1{
+  font-size: 5rem;
+  margin-bottom: 50px;
+  color: #ffb83c;
+}
+nav{
+  margin-bottom: 20px;
+}
+nav ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: #fff6f1;
+  width: 100%;
+  height: 50px;
+  list-style-type: none;
+}
+nav li{
+  width: 170px;
+  height: 100%;
+  border: 1px solid #d9d4d1;
+  margin-right: 10px;
+  box-shadow: 0 1px 5px 0 lightgray;
+}
+nav a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: #ffb83c;
+}
+nav a:hover{
+  background-color: rgba(150, 150, 150, 0.1);
+}
+/*HEADER STOP*/
+
+/*MAIN START*/
+main h2{
+  font-size: 3.4rem;
+  color: #ffb83c;
+  margin-bottom: 10px;
+}
+main p{
+  font-size: 1.6rem;
+  line-height: 25px;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  color: #7a7776;
+}
+main .main-container{
+  width: 300px;
+}
+/*MAIN STOP*/
+
+/*FOOTER START*/
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #fff6f1;
+  border-top: 1px solid #d9d4d1;
+  margin-top: 30px;
+}
+footer p{
+  font-size: 2rem;
+  color: #7a7776;
+}
+footer .social-div{
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  margin-top: 10px;
+}
+footer .social-div .social-icon{
+  font-size: 5rem;
+  color: #7a7776;
+}
+/*footer .social-div .social-icon:hover{
+  color: #ffb83c;
+}*/
+footer .social-div .social-icon:hover{
+  animation-name: animationhover;
+  animation-duration: 400ms;
+  animation-fill-mode: forwards;
+}
+@keyframes animationhover {
+  100%{
+    color: #ffb83c;
+  }
+}
+/*FOOTER STOP*/
+/*MEDIA QUERY*/
+@media (max-width: 800px){
+  nav li{
+    width: 100px;
+  }
+}
+@media (max-width: 550px){
+  nav li{
+    width: 60px;
+  }
+  nav li a{
+    font-size: 1.4rem;
+  }
+  header h1{
+    font-size: 4.6rem;
+  }
+}
